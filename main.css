@@ -1,0 +1,372 @@
+/* -----------------------------------------------------------FONTS------------------------------------------------------------------*/
+@font-face 
+{
+    font-family: Montserrat-bold;
+    src: url(./fonts/Montserrat-Black.otf);
+}
+@font-face 
+{
+    font-family: Montserrat-medium;
+    src: url(./fonts/Montserrat-Medium.otf);
+}
+@font-face 
+{
+    font-family: SofiaPro-regular;
+    src: url(./fonts/SofiaProRegular.ttf);
+}
+@font-face 
+{
+    font-family: SofiaPro-bold;
+    src: url(./fonts/SofiaProBold.ttf);
+}
+@font-face 
+{
+    font-family: SofiaPro-medium;
+    src: url(./fonts/SofiaProMedium.ttf);
+}
+@font-face 
+{
+    font-family: SofiaPro-Extralight;
+    src: url(./fonts/SofiaProExtraLight.ttf);
+}
+
+
+/*--------------------------------------------------------ANIMATIONS------------------------------------------------------------------*/
+
+.animation-1
+{
+    animation: 2s anim-lineup ease-in-out
+    none;
+}
+@keyframes anim-lineup 
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    20%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.animation-2
+{
+    animation: 2s anim-rightside ease-in-out
+    none;
+}
+@keyframes anim-rightside 
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    20%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.fromtop 
+{
+    animation: 2s anim-fromtop ease-in 
+    none;
+}
+@keyframes anim-fromtop 
+{
+    0% 
+    { 
+        opacity: 0; 
+        transform: translateY(-10%);
+    }
+    25% 
+    { 
+        opacity: 1; 
+        transform: translateY(0%);
+    }
+    50% 
+    {
+
+    }
+    100% 
+    {
+
+    }
+  }
+  .fade-in
+  {
+    animation: fadein 2s ease-in-out none;
+  }
+  @keyframes fadein 
+  {
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+  }
+
+/* --------------------------------------------------------MAIN------------------------------------------------------------------*/
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+div.fullwidth
+{
+    width: 50%;
+}
+
+*
+{
+    cursor: url(./images/green-black.png), auto;
+}
+
+body
+{
+    margin: 0;
+    background:#080808;
+}
+
+.container
+{
+    position: sticky;
+    width: 80%;
+    top: 0;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+header
+{
+    position: sticky;
+    display: flex;
+    top: 0;
+    
+}
+header::after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav
+{
+    float: right;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    left: 5rem;
+}
+
+nav ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 1;
+}
+nav li 
+{
+    position: relative;
+    display: inline-block;
+    margin-left: 80px;
+    padding-top: 38px;
+    padding-bottom: 35px;
+    z-index: 1;
+}
+nav a
+{
+    color:white;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: SofiaPro-Extralight;
+    z-index: 1;
+}
+nav a:hover
+{
+    color: #5AFE73;
+}
+
+.welcome
+{
+    color: white;
+    font-family: SofiaPro-regular;
+    font-size: 28px;
+    font-weight: 200;
+    line-height: normal;
+    text-align: center;
+    padding-top: 6%;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+a:hover
+{
+    color: #5AFE73;
+}
+
+.logo
+{
+    position: sticky;
+    max-width: 100%;
+    max-height: 1px;
+    top: 23px;
+    padding-left: 30px;
+    margin: 0 auto;
+    z-index: 1;
+}
+/*--------------------------------------------------------------------ABOUT----------------------------------------------------------------------------*/
+
+h1
+{
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    font-family: SofiaPro-bold;
+    font-weight: 500;
+    color: #5AFE73;
+    text-align: center;
+    padding-top: 35rem;
+}
+
+.what-we-do
+{
+    color: white;
+    font-family: SofiaPro-medium;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*---------------------------------------------------------------------QR------------------------------------------------------------------------------------*/
+
+.container-1
+{
+    width: 450px;
+    font-family: SofiaPro-bold;
+    padding: 25px 35px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.container-1 p 
+{
+    font-weight: 600px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.container-1 input
+{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #5AFE73;
+    outline: 0;
+    padding: 10px 3px;
+    margin: 10px 0px 0px;
+    border-radius: 10px;
+}
+
+.container-1 button
+{
+    width: 100%;
+    height: 50px;
+    top: 50px;
+    background: #5AFE73;
+    color: #ffffff;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 400;
+    font-family: SofiaPro-medium; 
+}
+
+#imgbox
+{
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+#imgbox img
+{
+    width: 100%;
+    padding: 0px
+}
+#imgbox.show-img
+{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+
+button:hover
+{
+    color: #080808;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: box-shadow 0.2s ease-in-out;
+    
+}
+
+.container-1 .button-2
+{
+    width: 100%;
+    height: 50px;
+    top: 50px;
+    background: none;
+    color: #5AFE73;
+    border: 1px solid #5AFE73;
+    box-sizing: border-box;
+    border-radius: 10px;
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 400;
+    font-family: SofiaPro-medium; 
+}
+.button-2:hover
+{
+    color: #080808;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+/*--------------------------------------------------------------     ---------------------------------------------------------------------------------*/
