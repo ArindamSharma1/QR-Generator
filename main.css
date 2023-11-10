@@ -262,6 +262,50 @@ a:hover
     color: white;
     font-family: SofiaPro-Extralight;
 }
+
+.founder
+{
+    color: #d1d1d1;
+    font-family: SofiaPro-Extralight;
+    text-align: center;
+    padding-top: 3rem;
+    margin: 0 auto;
+    font-size: 30px;
+}
+.founder h2
+{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+@keyframes typing 
+{
+  from 
+    { 
+    width: 0 
+    }
+  to 
+    { 
+    width: 100%
+    }
+}
+@keyframes blink-caret 
+{
+  from, to 
+    { 
+    border-color: transparent 
+    }
+  50% 
+    { 
+    border-color: orange 
+    }
+}
+
 /*---------------------------------------------------------------------QR------------------------------------------------------------------------------------*/
 
 .container-1
@@ -372,4 +416,15 @@ button:hover
     max-height: 100%;
     top: 22rem;
     font-family: SofiaPro-medium;
+}
+
+/*--------------------------------------------------------------------CONTACT US----------------------------------------------------------------------------*/
+
+.contact-us
+{
+    color: #d1d1d1;
+    font-family: SofiaPro-bold;
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 50px;
 }
