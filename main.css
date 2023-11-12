@@ -275,7 +275,7 @@ a:hover
 .founder h2
 {
     overflow: hidden;
-    border-right: .15em solid orange;
+    border-right: .15em solid #5AFE73;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
