@@ -151,7 +151,7 @@ div.fullwidth
 body
 {
     margin: 0;
-    background:#080808;
+    background: #f5f5f5;
 }
 
 .container
@@ -219,7 +219,7 @@ nav a:hover
 
 .welcome
 {
-    color: white;
+    color: #5AFE73;
     font-family: SofiaPro-regular;
     font-size: 28px;
     font-weight: 200;
@@ -317,7 +317,7 @@ a:hover
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #ffffff;
+    background: #25252525;
     border-radius: 10px;
 }
 
@@ -403,6 +403,15 @@ button:hover
     color: #080808;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     transition: box-shadow 0.2s ease-in-out;
+}
+input
+{
+    background-color: #25252525;
+    color: black;
+}
+input::placeholder
+{
+    color: #080808;
 }
 
 /*--------------------------------------------------------------UNDER CONSTRUCTION---------------------------------------------------------------------------------*/
