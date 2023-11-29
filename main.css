@@ -160,20 +160,19 @@ body
 {
     position: sticky;
     width: 100%;
-    margin: auto auto;
-    z-index: 1;
+    /* margin: auto auto; */
     top: 0;
+    left: 10rem;
 }
 
 header
 {
     position: fixed;
     top: 0;
-    display: inline-flex;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    transition: 0.2s ease-in-out;
 }
 header::after
 {
@@ -184,28 +183,24 @@ header::after
 
 nav
 {
-    float: right;
     position: relative;
     top: 0;
-    z-index: 1;
-    left: 5rem;
+    left: 0;
 }
 
 nav ul
 {
-    margin: 0;
+    margin: auto;
     padding: 0;
     list-style: none;
-    z-index: 1;
 }
 nav li 
 {
     position: relative;
     display: inline-block;
-    margin-left: 80px;
+    margin-left: 26.9rem;
     padding-top: 38px;
     padding-bottom: 35px;
-    z-index: 1;
 }
 nav a
 {
@@ -215,7 +210,6 @@ nav a
     text-transform: uppercase;
     font-size: 20px;
     font-family: SofiaPro-Extralight;
-    z-index: 1;
 }
 nav a:hover
 {
