@@ -151,26 +151,29 @@ div.fullwidth
 body
 {
     margin: 0;
-    background: #f5f5f5;
+    background: #e7e7e7;
+    height: 500vh;
+    scroll-behavior: smooth;
 }
 
 .container
 {
     position: sticky;
     width: 80%;
-    top: 0;
     margin: auto auto;
     z-index: 1;
+    top: 0;
 }
 
 header
 {
     position: sticky;
-    display: flex;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
-    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: 0.2s ease-in-out;
 }
 header::after
 {
@@ -355,6 +358,7 @@ a:hover
     margin: 20px 0;
     font-weight: 400;
     font-family: SofiaPro-medium; 
+    transition: 0.2s ease-in-out;
 }
 
 #imgbox
@@ -381,7 +385,6 @@ button:hover
     color: #080808;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     transition: box-shadow 0.2s ease-in-out;
-    
 }
 
 .container-1 .button-2
