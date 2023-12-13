@@ -137,12 +137,6 @@ html
 {
     scroll-behavior: smooth;
 }
-
-div.fullwidth
-{
-    width: 50%;
-}
-
 *
 {
     cursor: url(./images/green-black.png), auto;
@@ -354,10 +348,30 @@ input::placeholder
     color: #080808;
     font-family: SofiaPro-regular;
     text-align: center;
-    top: 10rem;
+    top: 2rem;
     position: relative;
-    z-index: -1000;
 }
+@media (min-width: 769px) 
+{
+
+      .container-1 {
+          flex-direction: column;
+          align-items: center;
+          .header{
+          width: 80%;
+          margin: 0 auto;
+          max-width: 1150px;
+      }
+      }
+  
+}
+@media (min-width: 1025px) {
+      .container-1 {
+          flex-direction: row;
+          justify-content: space-between;
+      }
+  
+}  
 /*--------------------------------------------------------------UNDER CONSTRUCTION---------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------CONTACT US----------------------------------------------------------------------------*/
