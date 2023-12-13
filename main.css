@@ -152,158 +152,95 @@ body
 {
     margin: 0;
     background: #e7e7e7;
-    height: 500vh;
+    height: 100vh;
     scroll-behavior: smooth;
 }
-
-.container
+ul 
 {
-    position: sticky;
-    width: 100%;
-    /* margin: auto auto; */
-    top: 0;
-    left: 10rem;
-}
-
-header
-{
-    position: fixed;
-    top: 0;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-}
-header::after
-{
-    content: '';
-    display: table;
-    clear: both;
-}
-
-nav
-{
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-nav ul
-{
-    margin: auto;
+    margin: 0;
     padding: 0;
     list-style: none;
-}
-nav li 
+}   
+h2,
+h3,
+a 
 {
-    position: relative;
-    display: inline-block;
-    margin-left: 26.9rem;
-    padding-top: 38px;
-    padding-bottom: 35px;
-}
-nav a
+      color: #34495e;
+}  
+a 
 {
-    color:white;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-family: SofiaPro-Extralight;
-}
-nav a:hover
-{
-    color: #5AFE73;
-}
+      text-decoration: none;
+}    
 
-.welcome
+.logo 
 {
-    color: #5AFE73;
-    font-family: SofiaPro-regular;
-    font-size: 28px;
-    font-weight: 200;
-    line-height: normal;
-    text-align: center;
-    padding-top: 6%;
-}
-
-a
+      margin: 0;
+      font-size: 1.45em;
+}  
+.main-nav 
 {
-    text-decoration: none;
-    color: white;
+      margin-top: 5px;
+  
 }
-a:hover
+.logo a,
+.main-nav a 
 {
-    color: #5AFE73;
-}
-
-.logo
+      padding: 10px 15px;
+      text-transform: uppercase;
+      text-align: center;
+      display: block;
+}  
+.main-nav a 
 {
-    position: sticky;
-    max-width: 100%;
-    max-height: 1px;
-    top: 23px;
-    padding-left: 30px;
-    margin: 0 auto;
-    z-index: 1;
+      color: #34495e;
+      font-size: .99em;
 }
+  
+.main-nav a:hover 
+{
+      color: #5AFE73;
+}
+.header 
+{
+      padding-top: .5em;
+      padding-bottom: .5em;
+      border: 1px solid #a2a2a2;
+      font-family: SofiaPro-bold;
+      background-color: #f4f4f4;
+      -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+}
+  
+@media (min-width: 769px) 
+{
+      .header,
+      .main-nav {
+          display: flex;
+      }
+      .header {
+          flex-direction: column;
+          align-items: center;
+          .header{
+          width: 80%;
+          margin: 0 auto;
+          max-width: 1150px;
+      }
+      }
+  
+}
+@media (min-width: 1025px) {
+      .header {
+          flex-direction: row;
+          justify-content: space-between;
+      }
+  
+}  
 /*--------------------------------------------------------------------ABOUT----------------------------------------------------------------------------*/
 
-.about-us
-{
-    color: #5AFE73;
-    text-align: center;
-    padding-top: 25rem;
-    font-family: SofiaPro-medium;
-}
-.about-us p
-{
-    color: white;
-    font-family: SofiaPro-Extralight;
-}
-
-.founder
-{
-    color: #d1d1d1;
-    font-family: SofiaPro-Extralight;
-    text-align: center;
-    padding-top: 3rem;
-    margin: 0 auto;
-    font-size: 30px;
-}
-.founder h2
-{
-    overflow: hidden;
-    border-right: .15em solid #5AFE73;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
-}
-@keyframes typing 
-{
-  from 
-    { 
-    width: 0
-    }
-  to 
-    { 
-    width: 80%
-    }
-}
-@keyframes blink-caret 
-{
-  from, to
-    { 
-    border-color: transparent 
-    }
-  50% 
-    { 
-    border-color: #5AFE73;
-    }
-}
 
 /*---------------------------------------------------------------------QR------------------------------------------------------------------------------------*/
 
@@ -412,27 +349,15 @@ input::placeholder
 {
     color: #080808;
 }
-
+.welcome
+{
+    color: #080808;
+    font-family: SofiaPro-regular;
+    text-align: center;
+    top: 10rem;
+    position: relative;
+    z-index: -1000;
+}
 /*--------------------------------------------------------------UNDER CONSTRUCTION---------------------------------------------------------------------------------*/
 
-.under-construction p
-{
-    position: relative;
-    color: #5AFE73;
-    text-align: center;
-    max-width: 100%;
-    max-height: 100%;
-    top: 22rem;
-    font-family: SofiaPro-medium;
-}
-
 /*--------------------------------------------------------------------CONTACT US----------------------------------------------------------------------------*/
-
-.contact-us
-{
-    color: #d1d1d1;
-    font-family: SofiaPro-bold;
-    text-align: center;
-    padding-top: 5rem;
-    font-size: 50px;
-}
